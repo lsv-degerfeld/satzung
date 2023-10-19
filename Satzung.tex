@@ -9,10 +9,12 @@
 \setlength{\topskip}{\ht\strutbox} % behebt Warnung von geometry
 \geometry{a4paper,left=25mm,right=25mm,top=30mm,bottom=30mm}
 \usepackage[
-automark, % Kapitelangaben in Kopfzeile automatisch erstellen
-headsepline, % Trennlinie unter Kopfzeile
+automark,
+% Kapitelangaben in Kopfzeile automatisch erstellen
+headsepline,
+% Trennlinie unter Kopfzeile
 ilines % Trennlinie linksbündig ausrichten
-]{scrpage2}
+]{scrlayer-scrpage }
 
 \pdfminorversion 4
 
@@ -47,591 +49,445 @@ ilines % Trennlinie linksbündig ausrichten
 \title{Satzung}
 \subtitle{nach der Satzungsänderung in der Mitgliederversammlung vom 17. Oktober 2020}
 \usepackage{scrjura,blindtext,multicol}
+\setlength\columnsep{20pt} % Abstand zwischen den Spalten
 
 \begin{document}
 	
 	\thispagestyle{plain}	
 		\begin{center}
 			\includegraphics[scale=0.2]{Logo.png}\\[5ex]
-						
+
 			\Huge{\textbf{Satzung}}\\[1.5ex]
-			\large{nach der Satzungsänderung in	der				Mitgliederversammlung vom}\\[1.5ex]
-			
+			\large{nach der Satzungsänderung in	der Mitgliederversammlung vom}\\[1.5ex]
+	
 			\normalsize
-						
+
 			\textbf{\Large{17. Oktober 2020}}\\
-			
+	
 		\end{center}
 	
 	\begin{contract}
 		\begin{multicols}{2}
-		
-		\Clause{title={Name, Sitz und Rechtsform}}
+
+		\Clause{title={Name,
+    Sitz und Rechtsform}}
 		Der Verein führt den Namen\\
 		>Luftsportverein Degerfeld eV<
-		
-		Er hat seinen Sitz in Albstadt.
-		
-		Er ist in das Vereinsregister beim AmtsgerichtStuttgart unter der Nr. VR 400196 eingetragen
-		
+
+    Er hat seinen Sitz in Albstadt.
+
+		Er ist in das Vereinsregister beim Amtsgericht Stuttgart unter der Nr. VR 400196 eingetragen
+
 		\SubClause{title={Mitgliedschaft in Verbänden}}
-		Der Verein ist Mitglied im Baden-Württembergischen Luftfahrtverband (BWLV), im Hans-Kellner-Gedächtnisfonds(HKF), im Deutschen		Aero Club (DAeC) und im Württembergischen
-		Landessportbund (WLSB). Der Verein und seine		Mitglieder anerkennen als für sich
-		rechtsverbindlich die Satzungsbestimmungen und		Ordnungen des Baden-Württembergischen
-		Luftfahrtverbandes und im Württembergischen		Landessportbundes in ihrer jeweils gültigen
-		Fassung.
-		
-		\Clause{title={Zweck, Gemeinnützigkeit und
-		Mittelverwendung}}
-		Der Verein verfolgt ausschließlich und		unmittelbar
-		gemeinnützige Zwecke im Sinne des Abschnittes		"`Steuerbegünstigte Zwecke"' der Abgabenordnung.
-		
-		Zweck des Vereins ist die Pflege und die		Förderung des Luftsports. Er fördert alle damit
-		zusammenhängenden Angelegenheiten,		insbesondere durch den Bau, Kauf und
-		Unterhaltung von Luftfahrtgeräten, Hilfsgeräten		und Luftfahrteinrichtungen für sportliche Zwecke
-		und die Ausbildung seiner Mitglieder. Eines seiner		Hauptanliegen ist die Betreuung und Förderung
-		der Jugend. Er darf keine anderen Ziele verfolgen		und sich nicht parteipolitisch oder militärähnlich		betätigen.
-		
-		Der Verein ist selbstlos tätig, er verfolgt nicht in		erster Linie eigenwirtschaftliche Zwecke. Mittel des		Vereins dürfen nur für die satzungsmäßigen
-		Zwecke des Vereins verwendet werden. Es darf		keine Person durch Ausgaben, die dem Zweck der
-		Körperschaft fremd sind oder durch		unverhältnismäßig hohe Vergütungen begünstigt
-		werden.
-		
-		Die Hauptversammlung bestimmt, welche		Luftsportarten betrieben werden.
-		
-		\Clause{title={3 Geschäftsjahr}}
+		Der Verein ist Mitglied im Baden-Württembergischen Luftfahrtverband (BWLV),
+    im Hans-Kellner-Gedächtnisfonds(HKF),
+    im Deutschen Aero Club (DAeC) und im Württembergischen Landessportbund (WLSB).
+		Der Verein und seine	Mitglieder anerkennen als für sich rechtsverbindlich die Satzungsbestimmungen und	Ordnungen des Baden-Württembergischen Luftfahrtverbandes und im Württembergischen Landessportbundes in ihrer jeweils gültigen Fassung.
+
+		\Clause{title={Zweck,
+    Gemeinnützigkeit und Mittelverwendung}}
+		Der Verein verfolgt ausschließlich und unmittelbar gemeinnützige Zwecke im Sinne des Abschnittes "`Steuerbegünstigte Zwecke"' der Abgabenordnung.
+
+		Zweck des Vereins ist die Pflege und die Förderung des Luftsports.
+		Er fördert alle damit	zusammenhängenden Angelegenheiten,
+    insbesondere durch den Bau,
+    Kauf und Unterhaltung von Luftfahrtgeräten,
+    Hilfsgeräten	und Luftfahrteinrichtungen für sportliche Zwecke und die Ausbildung seiner Mitglieder.
+		Eines seiner Hauptanliegen ist die Betreuung und Förderung der Jugend.
+		Er darf keine anderen Ziele verfolgen und sich nicht parteipolitisch oder militärähnlich betätigen.
+
+		Der Verein ist selbstlos tätig,
+    er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.
+		Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke des Vereins verwendet werden. Es darf keine Person durch Ausgaben,
+    die dem Zweck der Körperschaft fremd sind oder durch unverhältnismäßig hohe Vergütungen begünstigt werden.
+
+		Die Hauptversammlung bestimmt,
+    welche Luftsportarten betrieben werden.
+
+		\Clause{title={Geschäftsjahr}}
 		Geschäftsjahr ist das Kalenderjahr.
-		
-		\Clause{title={4 Mitglieder}}
-		
+
+		\Clause{title={Mitglieder}}
+
 		Mitglieder des Vereins sind:
 		\begin{enumerate}
 			\item ordentliche Mitglieder
 		\begin{enumerate}
-			\item Erwachsene Mitglieder, die das 25.Lebensjahr
-			vollendet haben, die den Luftsport im Verein aktiv
+			\item Erwachsene Mitglieder,
+      die das 25.Lebensjahr vollendet haben,
+      die den Luftsport im Verein aktiv
 			ausüben.
-			\item Jugendliche Mitglieder, die das 25. Lebensjahr
-			noch nicht vollendet haben, die den Luftsport im
-			Verein aktiv ausüben.
-			\item{passive Mitglieder}\\ Erwachsene und Jugendliche Mitglieder, die im
-			Verein den Luftsport aktiv ausgeübt haben,
-			derzeit aber den Luftsport nicht aktiv ausüben.
+			\item Jugendliche Mitglieder,
+      die das 25. Lebensjahr noch nicht vollendet haben,
+      die den Luftsport im Verein aktiv ausüben.
+			\item{passive Mitglieder} Erwachsene und Jugendliche Mitglieder,
+      die im Verein den Luftsport aktiv ausgeübt haben,
+      derzeit aber den Luftsport nicht aktiv ausüben.
 		\end{enumerate}
-	\item{Fördernde Mitglieder}\\ Fördernde Mitglieder sind natürliche oder juristische Personen, die an den Zielen des
-	Vereins interessiert sind, den Luftsport im Verein nicht aktiv ausüben oder ausgeübt haben.
-		
+	\item{Fördernde Mitglieder} Fördernde Mitglieder sind natürliche oder juristische Personen,
+    die an den Zielen des Vereins interessiert sind,
+    den Luftsport im Verein nicht aktiv ausüben oder ausgeübt haben.
+
 	
 		\item{Ehrenmitglieder}\\
-		Natürliche Personen, die sich um den Verein
-		besonders verdient gemacht haben, können vom
-		Ausschuss zu Ehrenmitgliedern ernannt werden.
-		Vorsitzende und stellvertretende Vorsitzende
-		können nach Beendigung ihres Amtes zu
-		Ehrenvorsitzenden ernannt werden, wenn sie sich
-		um den Verein außerordentlich verdient gemacht
-		haben.
+		Natürliche Personen,
+    die sich um den Verein besonders verdient gemacht haben,
+    können vom Ausschuss zu Ehrenmitgliedern ernannt werden.
+		Vorsitzende und stellvertretende Vorsitzende können nach Beendigung ihres Amtes zu Ehrenvorsitzenden ernannt werden,
+    wenn sie sich um den Verein außerordentlich verdient gemacht haben.
 	\end{enumerate}
 		\Clause{title={Erwerb der Mitgliedschaft}}
-		
-		Die Aufnahme ist unter Anerkennung der
-		Satzung und Entrichtung des Aufnahmebeitrages
-		schriftlich zu beantragen. Bewerber für den aktiven
-		Luftsport haben außerdem eine
-		Enthaftungserklärung abzugeben und ihre
-		Fliegertauglichkeit nachzuweisen. Noch nicht
-		volljährige Mitglieder benötigen die Zustimmung
-		ihrer gesetzlichen Vertreter.
-		
+
+		Die Aufnahme ist unter Anerkennung der Satzung und Entrichtung des Aufnahmebeitrages schriftlich zu beantragen.
+		Bewerber für den aktiven Luftsport haben außerdem eine Enthaftungserklärung abzugeben und ihre Fliegertauglichkeit nachzuweisen.
+		Noch nicht volljährige Mitglieder benötigen die Zustimmung ihrer gesetzlichen Vertreter.
+
 		Über die Aufnahme entscheidet der Ausschuß.
-		
-		Die Ablehnung des Aufnahmeantrages braucht
-		nicht begründet zu werden. Sie ist vom
-		Vorsitzenden dem Bewerber schriftlich mitzuteilen.
+
+		Die Ablehnung des Aufnahmeantrages braucht nicht begründet zu werden.
+		Sie ist vom Vorsitzenden dem Bewerber schriftlich mitzuteilen.
 		Der Aufnahmebeitrag ist zurückzuzahlen.
-		
+
 		\Clause{title={Erlöschen der Mitgliedschaft}}
 		Die Mitgliedschaft erlischt durch
 		\begin{enumerate}[label=\alph*)]
-		\item Austritt, der nur zum Schluß des Geschäftsjahres
-		möglich ist. Die Kündigung muß dem Vorsitzenden
-		bis zum 3o. November schriftlich gegen
-		Empfangsnachweis zugegangen sein.
+		\item Austritt,
+    der nur zum Schluß des Geschäftsjahres möglich ist.
+		Die Kündigung muß dem Vorsitzenden bis zum 30. November schriftlich gegen Empfangsnachweis zugegangen sein.
 		\item Tod.
-		
-		\item{Ausschluß.} Ausgeschlossen kann werden, wer
-		gegen die Vorschriften, die der Flugsicherheit
-		dienen, gegen die Satzung, die Beschlüsse und
-		Anordnungen der Organe und das Ansehen des
-		Vereins wiederholt oder erheblich verstoßen hat,
-		sich beharrlich ohne ausreichenden Grund weigert,
-		die ihm von den Organen des Vereins
-		übertragenen Aufgaben zu erfüllen oder mit
-		Zahlungsverpflichtungen trotz schriftlicher
-		Mahnung länger als ein Jahr im Rückstand ist.
+
+		\item{Ausschluß.} Ausgeschlossen kann werden,
+    wer gegen die Vorschriften,
+    die der Flugsicherheit dienen,
+    gegen die Satzung,
+    die Beschlüsse und Anordnungen der Organe und das Ansehen des Vereins wiederholt oder erheblich verstoßen hat,
+    sich beharrlich ohne ausreichenden Grund weigert,
+    die ihm von den Organen des Vereins übertragenen Aufgaben zu erfüllen oder mit Zahlungsverpflichtungen trotz schriftlicher Mahnung länger als ein Jahr im Rückstand ist.
 	\end{enumerate}
-		
+
 		Über den Ausschluß entscheidet der Ausschuß.
-		Der Beschluß ist zu begründen und dem
-		Betroffennen vom Vorsitzenden schriftlich gegen
-		Empfangsnachweis mitzuteilen. Gegen den
-		Ausschluß kann binnen eines Monats nach
-		Zustellung schriftlich Beschwerde an die
-		Hauptversammlung erhoben werden, die endgültig
-		entscheidet. Hierauf ist im Beschluß hinzuweisen.
-		
-		Ausscheidende Mitglieder oder deren Erben
-		haben keinen Anspruch an das Vereinsvermögen.
-		Verpflichtungen gegenüber dem Verein bleiben
-		unberührt.
-		Der Mitgliedsausweis ist zurückzugeben.
-		
-		\Clause{title={Beiträge}}
-		Die Vereinsbeiträge der Mitglieder, die
-		Aufnahmebeiträge und die Sonderzahlungen
-		bestimmt die Hauptversammlung. In	
-		Ausnahmefällen kann der Ausschuß Ermäßigungen
-		gewähren.
-		
-		Die Beiträge und sonstigen Zahlungen an den
-		BWLV, DAeC, HKF und den WLSB werden den
-		Mitgliedsbeiträgen zugerechnet und bedürfen
-		nicht der Zustimmung der Hauptversammlung.
-		
-		Die Beiträge sind im 1. Quartal eines Jahres in
-		einer Summe zu bezahlen, in der Regel durch
-		Lastschrifteinzug.
-		
-		Ehrenmitglieder sind von Pflichtbeiträgen
-		befreit.
-		
-		Die Start- und Fluggebühren ergeben sich aus
-		den Betriebskosten und werden vom Ausschuß
-		festgesetzt.
-		Der Ausschuß ist gehalten, diese Gebühren im
-		Interesse der Mitglieder so günstig wie möglich zu
-		halten.
-		
-		\Clause{title={Pflichten der Mitglieder}}
-		
-		Jedes Mitglied hat sich den Bestimmungen der
-		Satzung und den Beschlüssen der Organe des
-		Vereins zu fügen und diese auszuführen. Im
-		Arbeitseinsatz ist den Anordnungen des
-		Technischen Leiters und der Warte sowie des
-		Platz- und Hallenverwalters, im Flugdienst den
-		Anordnungen des Flugleiters, der Fluglehrer und
-		des Startleiters Folge zu leisten. Die den
-		Luftsportverkehr regelnden Bestimmungen sind
-		gewissenhaft zu befolgen.
-		
-		Das Vereinseigentum und die sonst zur
-		Verfügung stehenden Gegenstände sind schonend
-		zu behandeln. Beschädigungen sind unverzüglich
-		dem Technischen Leiter bzw dem Platz-und
-		Hallenverwalter zu melden.
-		Für vorsätzliche und grob fahrlässige
-		Beschädigungen haftet das Mitglied in voller
-		Höhe.
-		
-		Alle Tätigkeiten im Verein sind ehrenamtlich. Die
-		notwendigen Auslagen können auf Beschluß
-		des Vorstandes ersetzt werden.
-		
-		Aktive Ordentliche Mitglieder gemäß \$4 Nr. 1 a
-		und b der Satzung sind verpflichtet, an der
-		Vereinsarbeit teilzunehmen.
-		
+		Der Beschluß ist zu begründen und dem Betroffennen vom Vorsitzenden schriftlich gegen Empfangsnachweis mitzuteilen.
+    Gegen den Ausschluß kann binnen eines Monats nach Zustellung schriftlich Beschwerde an die
+    Hauptversammlung erhoben werden,
+    die endgültig entscheidet.
+    Hierauf ist im Beschluß hinzuweisen.
+
+    Ausscheidende Mitglieder oder deren Erben haben keinen Anspruch an das Vereinsvermögen.
+    Verpflichtungen gegenüber dem Verein bleiben unberührt.
+    Der Mitgliedsausweis ist zurückzugeben.
+
+    \Clause{title={Beiträge}}
+    Die Vereinsbeiträge der Mitglieder,
+    die Aufnahmebeiträge und die Sonderzahlungen bestimmt die Hauptversammlung.
+    In Ausnahmefällen kann der Ausschuß Ermäßigungen gewähren.
+    
+    Die Beiträge und sonstigen Zahlungen an den BWLV,
+    DAeC,
+    HKF und den WLSB werden den Mitgliedsbeiträgen zugerechnet und bedürfen nicht der Zustimmung der Hauptversammlung.
+    
+    Die Beiträge sind im 1. Quartal eines Jahres in einer Summe zu bezahlen,
+    in der Regel durch Lastschrifteinzug.
+    
+    Ehrenmitglieder sind von Pflichtbeiträgen befreit.
+    
+    Die Start- und Fluggebühren ergeben sich aus den Betriebskosten und werden vom Ausschuß festgesetzt.
+    Der Ausschuß ist gehalten,
+    diese Gebühren im Interesse der Mitglieder so günstig wie möglich zu halten.
+    
+    \Clause{title={Pflichten der Mitglieder}}
+    
+    Jedes Mitglied hat sich den Bestimmungen der Satzung und den Beschlüssen der Organe des Vereins zu fügen und diese auszuführen.
+  	Im Arbeitseinsatz ist den Anordnungen des Technischen Leiters und der Warte sowie des Platz- und Hallenverwalters,
+    im Flugdienst den Anordnungen des Flugleiters,
+    der Fluglehrer und des Startleiters Folge zu leisten.
+		Die den Luftsportverkehr regelnden Bestimmungen sind gewissenhaft zu befolgen.
+
+		Das Vereinseigentum und die sonst zur Verfügung stehenden Gegenstände sind schonend zu behandeln.
+		Beschädigungen sind unverzüglich dem Technischen Leiter bzw dem Platz-und Hallenverwalter zu melden.
+		Für vorsätzliche und grob fahrlässige Beschädigungen haftet das Mitglied in voller Höhe.
+
+		Alle Tätigkeiten im Verein sind ehrenamtlich.
+		Die notwendigen Auslagen können auf Beschluß des Vorstandes ersetzt werden.
+
+		Aktive Ordentliche Mitglieder gemäß \$4 Nr. 1 a und b der Satzung sind verpflichtet,
+    an der Vereinsarbeit teilzunehmen.
+
 		\Clause{title={Rechte der Mitglieder}}
-			
-		Die aktiven ordentlichen
-		Mitglieder gemäß \$4 Nr 1 a und b, sowie die
-		Ehrenmitglieder der Satzung sind berechtigt, die
-		Fluggeräte nach den Beschlüssen des Ausschusses
-		und den Anordnungen des Ausbildungsleiters, der
-		Fluglehrer und Flugleiter zu benützen und an den
-		Veranstaltungen des Vereins teilzunehmen.
-		
-		Stimm- und wahlberechtigtsind die
-		ordentlichen Mitglieder und die Ehrenmitglieder
-		
-		Solange Mitglieder mit Zahlungen trotz
-		Mahnung im Rückstand sind, ruhen ihre
-		Rechte.
-		
+
+		Die aktiven ordentlichen Mitglieder gemäß \$4 Nr 1 a und b,
+    sowie die Ehrenmitglieder der Satzung sind berechtigt,
+    die Fluggeräte nach den Beschlüssen des Ausschusses und den Anordnungen des Ausbildungsleiters,
+    der Fluglehrer und Flugleiter zu benützen und an den Veranstaltungen des Vereins teilzunehmen.
+
+		Stimm- und wahlberechtigtsind die ordentlichen Mitglieder und die Ehrenmitglieder
+
+		Solange Mitglieder mit Zahlungen trotz Mahnung im Rückstand sind,
+    ruhen ihre Rechte.
+
 		\Clause{title={Mitgliederzusammenkunft}}
-		Unter Vorsitz eines Ausschussmitgliedes findet
-		in	der Regel monatlich an einem im Voraus
-		bestimmten Tag an einem längere Zeit
-		gleichbleibenden Ort eine
-		Mitgliederzusammenkunft statt.
-		
-		Die Mitgliederzusammenkünfte dienen der
-		Aussprache über die den Verein berührenden
-		Fragen, wobei sich Vorstand und Ausschuß über
-		die Meinung der Mitglieder orientieren können.
-		Darüberhinaus dient die Mitgliederzusammenkunft
-		der Förderung der Kameradschaft und der
-		theoretischen Weiterbildung der Mitglieder.
-		
+		Unter Vorsitz eines Ausschussmitgliedes findet in	der Regel monatlich an einem im Voraus bestimmten Tag an einem längere Zeit gleichbleibenden Ort eine Mitgliederzusammenkunft statt.
+
+		Die Mitgliederzusammenkünfte dienen der	Aussprache über die den Verein berührenden Fragen,
+    wobei sich Vorstand und Ausschuß über die Meinung der Mitglieder orientieren können.
+    Darüberhinaus dient die Mitgliederzusammenkunft der Förderung der Kameradschaft und der theoretischen Weiterbildung der Mitglieder.
+
 		\Clause{title={Organe des Vereins}}
 		Organe des Vereins sind:
-		1. der Vorstand
-		2. der Ausschuß
-		3. die Hauptversammlung
-		
-		\Clause{title={12 Der Vorstand}}
+    \begin{enumerate}
+		\item der Vorstand
+		\item der Ausschuß
+		\item die Hauptversammlung
+    \end{enumerate}
+
+		\Clause{title={Der Vorstand}}
 		Vorstand des Vereins i.S. des \$26 BGB sind:
-		der Vorsitzende
-		der 1. stellvertretende Vorsitzende
-		der 2. stellvertretende Vorsitzende.
-		Sie vertreten den Verein gerichtlich und
-		außergerichtlich, führen die laufenden Geschäfte
-		des Vereins, überwachen die Tätigkeiten der
-		übrigen Ausschußmitglieder, leiten die Sitzungen
-		des Ausschusses und der Hauptversammlung und
-		vollziehen deren Beschlüße. Jeder von ihnen ist
-		allein vertretungsberechtigt und befugt, auch die
-		vorstehend genannten Funktionen allein
-		auszuüben.
-		
-		Im Innenverhältnis sind die stellvertretenden
-		Vorsitzenden verpflichtet, von ihrem
-		Vertretungsrecht und von ihrem Recht auf
-		Ausübung der vorstehend genannten Funktionen
-		nur im Falle der Verhinderung des Vorsitzenden
-		oder mit dessen Ermächtigung Gebrauch zu
-		machen. Der 2. stellvertretende Vorsitzende darf
-		die Funktionen nur ausüben, wenn sowohl der
-		Vorsitzende als auch der 1. stellvertretende
-		Vorsitzende verhindert sind oder mit deren
-		Ermächtigung.
-		
-		Im Innenverhältnis bedarf der Vorstand für
-		Erwerb und Veräußerung von
-		Vermögensgegenständen über 1.500,-- EURO im
-		Einzelfall der vorherigen Zustimmung des
-		Ausschusses.
-		
-		In dringenden Angelegenheiten, deren
-		Erledigung nicht bis zu einer Ausschußsitzung
-		aufgeschoben werden kann, entscheidet der
-		Vorstand anstelle des Ausschusses. Die Gründe und
-		die Art der Erledigung sind dem Ausschuß in der
-		nächsten Sitzung mitzuteilen.
-		
+    \begin{itemize}
+      \item der Vorsitzende
+      \item der 1. stellvertretende Vorsitzende
+      \item der 2. stellvertretende Vorsitzende.
+    \end{itemize}
+		Sie vertreten den Verein gerichtlich und außergerichtlich,
+    führen die laufenden Geschäftedes Vereins,
+    überwachen die Tätigkeiten der übrigen Ausschußmitglieder,
+    leiten die Sitzungen des Ausschusses und der Hauptversammlung und vollziehen deren Beschlüße.
+    Jeder von ihnen ist allein vertretungsberechtigt und befugt,
+    auch die vorstehend genannten Funktionen allein auszuüben.
+
+		Im Innenverhältnis sind die stellvertretenden Vorsitzenden verpflichtet,
+    von ihrem Vertretungsrecht und von ihrem Recht auf Ausübung der vorstehend genannten Funktionen nur im Falle der Verhinderung des Vorsitzenden oder mit dessen Ermächtigung Gebrauch zu machen.
+    Der 2. stellvertretende Vorsitzende darf die Funktionen nur ausüben,
+    wenn sowohl der
+		Vorsitzende als auch der 1. stellvertretende Vorsitzende verhindert sind oder mit deren  Ermächtigung.
+
+		Im Innenverhältnis bedarf der Vorstand für Erwerb und Veräußerung von  Vermögensgegenständen über 1.500,-- EURO im Einzelfall der vorherigen Zustimmung des Ausschusses.
+
+		In dringenden Angelegenheiten,
+    deren Erledigung nicht bis zu einer Ausschußsitzung aufgeschoben werden kann,
+    entscheidet der Vorstand anstelle des Ausschusses.
+    Die Gründe und die Art der Erledigung sind dem Ausschuß in dernächsten Sitzung mitzuteilen.
+
 		\Clause{title={Der Ausschuß}}
-		Mitglieder des Ausschusses
-		sind:
-		der Vorsitzende
-		der 1. stellvertretendeVorsitzende
-		der 2. stellvertretende Vorsitzende
-		der Kassenverwalter
-		der Ausbildungsleiter
-		der/die Technischer Leiter
-		der Flugbetriebsleiter
-		der Platz- und Hallenverwalter
-		der Jugendleiter
-		der Schriftführer
-		der Pressewart
-		4 Beisitzer
-		Mit Ausnahme der Vorsitzenden und des
-		Kassenverwalters können mehrere Aufgaben von
-		derselben Person übernommen werden.
-		
-		Der Ausschuß und damit auch der Vorstand
-		werden auf zwei Jahre gewählt. Wiederwahl ist
-		zulässig.
-		
-		Der Ausschuß ist zuständig für alle
-		Angelegenheiten, welche nicht ausdrücklich dem
-		Vorstand oder der Hauptversammlung vorbehalten
-		sind. Dies sind insbesondere
-		'Aufstellung der vereinsinternen Regeln für
-		Flugbetrieb, Ausbildung sowie Platz- und
-		Geräteunterhaltung
-		b) Zustimmung zur Durchführung von
-		Veranstaltungen und Festsetzung der dafür
-		notwendigen Bestimmungen
-		c) Anordnung von Maßnahmen gegen Mitglieder
-		d) Vorbereitung der Hauptversammlung
-		e) Vergabe von Aufträgen im Gegenwert von mehr als 1.500,-- EURO
-		f) Ersatz der während der Amtszeit ausscheidenden
-		Mitglieder des Ausschusses (ohne Vorstand)
-		bis zur nächsten Hauptversammlung.
-		
-		Zu den Sitzungen des Ausschusses ist vom
-		Vorstand
-		mit angemessener Frist unter Angabe von
-		Zeitpunkt, Tagungsort und Tagesordnung
-		schriftlich einzuladen. In außerordentlichen Fällen
-		kann die Einladung kurzfristig und formlos
-		erfolgen.
-		
-		Der Ausschuß muß einberufen werden, wenn es
-		ein Drittel seiner Mitglieder unter Angabe des
-		Grundes, der in den Aufgaben des Vereins liegen
-		muß, beim Vorstand schriftlich beantragt.
-		
-		Der Ausschuß beschließt durch Abstimmung. Bei
-		Stimmengleichheit entscheidet die Stimme des
-		Vorsitzenden.
-		
-		Der Ausschuß ist beschlußfähig, wenn
-		einschließlich des Vorstandes mehr als die Hälfte
-		der Mitglieder anwesend sind.
-		
+		Mitglieder des Ausschusses sind:
+    \begin{itemize}
+      \item der Vorsitzende
+      \item der 1. stellvertretendeVorsitzende
+      \item der 2. stellvertretende Vorsitzende
+      \item der Kassenverwalter
+      \item der Ausbildungsleiter
+      \item der/die Technischer Leiter
+      \item der Flugbetriebsleiter
+      \item der Platz- und Hallenverwalter
+      \item der Jugendleiter
+      \item der Schriftführer
+      \item der Pressewart
+      \item 4 Beisitzer
+  \end{itemize}
+    Mit Ausnahme der Vorsitzenden und des Kassenverwalters können mehrere Aufgaben von derselben Person übernommen werden.
+
+		Der Ausschuß und damit auch der Vorstand werden auf zwei Jahre gewählt.
+    Wiederwahl ist zulässig.
+
+		Der Ausschuß ist zuständig für alle Angelegenheiten,
+    welche nicht ausdrücklich dem Vorstand oder der Hauptversammlung vorbehalten sind.
+    Dies sind insbesondere
+    \begin{enumerate}[label=\alph*)]
+      \item Aufstellung der vereinsinternen Regeln für Flugbetrieb,
+      Ausbildung sowie Platz- und Geräteunterhaltung
+      \item Zustimmung zur Durchführung von Veranstaltungen und Festsetzung der dafür notwendigen Bestimmungen
+      \item Anordnung von Maßnahmen gegen Mitglieder
+      \item Vorbereitung der Hauptversammlung
+      \item Vergabe von Aufträgen im Gegenwert von mehr als 1.500,-- EURO
+      \item Ersatz der während der Amtszeit ausscheidenden Mitglieder des Ausschusses (ohne Vorstand) bis zur nächsten Hauptversammlung.
+    \end{enumerate}
+
+		Zu den Sitzungen des Ausschusses ist vom Vorstand mit angemessener Frist unter Angabe von Zeitpunkt,
+    Tagungsort und Tagesordnung schriftlich einzuladen.
+    In außerordentlichen Fällen kann die Einladung kurzfristig und formlos erfolgen.
+
+		Der Ausschuß muß einberufen werden,
+    wenn es ein Drittel seiner Mitglieder unter Angabe des Grundes,
+    der in den Aufgaben des Vereins liegen muß,
+    beim Vorstand schriftlich beantragt.
+
+		Der Ausschuß beschließt durch Abstimmung.
+    Bei Stimmengleichheit entscheidet die Stimme des Vorsitzenden.
+
+		Der Ausschuß ist beschlußfähig,
+    wenn einschließlich des Vorstandes mehr als die Hälfte der Mitglieder anwesend sind.
+
 		\Clause{title={Die Luftsportjugend}}
-		Der Luftsportverein Degerfeld e.V. unterhält im
-		Rahmen ihrer Jugendarbeit die
-		Jugendorganisation Luftsportjugend Degerfeld.
-		
-		Die Luftsportjugend Degerfeld arbeitet gemäß
-		der verabschiedeten Jugendordnung.
-		
-		Die Jugendordnung wird von der
-		Luftsportjugend beschlossen. Für die
-		Verabschiedung der Jugendordnung ist der
-		Ausschuß zuständig.
-		
+		Der Luftsportverein Degerfeld e.V. unterhält im Rahmen ihrer Jugendarbeit die Jugendorganisation Luftsportjugend Degerfeld.
+
+		Die Luftsportjugend Degerfeld arbeitet gemäß der verabschiedeten Jugendordnung.
+
+		Die Jugendordnung wird von der Luftsportjugend beschlossen. Für die Verabschiedung der Jugendordnung ist der Ausschuß zuständig.
+
 		\Clause{title={Der Schriftführer}}
-		Der Schriftführer führt die Protokolle über die
-		Sitzungen des Ausschusses und der
-		Hauptversammlung. Die Protokolle sind vom
-		Sitzungsleiter und vom Schriftführer zu
-		unterschreiben. Sie sollen den wesentlichen Teil
-		der Beratungen, die gefaßten Beschlüsse und das
-		Stimmenverhältnis bei Wahlen und Abstimmungen
-		enthalten.
-		
+		Der Schriftführer führt die Protokolle über die Sitzungen des Ausschusses und der Hauptversammlung.
+    Die Protokolle sind vom Sitzungsleiter und vom Schriftführer zu unterschreiben.
+    Sie sollen den wesentlichen Teil der Beratungen,
+    die gefaßten Beschlüsse und das Stimmenverhältnis bei Wahlen und Abstimmungen enthalten.
+
 		Die Mitglieder können die Protokolle einsehen,
-		soweit nicht persönliche Belange Anderer berührt
-		sind.
-		
+    soweit nicht persönliche Belange Anderer berührtsind.
+
 		\Clause{title={Der Pressewart}}
-		Der Pressewart unterrichtet die örtliche Presse und
-		die Fachblätter übergeordneter Organisationen
-		über die Tätigkeit des Vereins und wirbt durch
-		Veröffentlichung von Berichten für den Luftsport
-		im allgemeinen und für den Verein im Besonderen.
-		Er unterrichtet die Mitglieder über allgemein
-		interessierende Vereinsangelegenheiten. Alle
-		Mitglieder sind gehalten, ihm Material und
-		Lichtbilder über besondere Ereignisse zur
-		Verfügung zu stellen.
-		
+		Der Pressewart unterrichtet die örtliche Presse und die Fachblätter übergeordneter Organisationen über die Tätigkeit des Vereins und wirbt durch Veröffentlichung von Berichten für den Luftsport im allgemeinen und für den Verein im Besonderen.
+		Er unterrichtet die Mitglieder über allgemein interessierende Vereinsangelegenheiten.
+    Alle Mitglieder sind gehalten, ihm Material und Lichtbilder über besondere Ereignisse zur Verfügung zu stellen.
+
 		\Clause{title={Der Kassenverwalter}}
-		Der Kassenverwalter verwaltet die Kasse und
-		führt die Rechung. Er hat für den Einzug der
-		Einnahmen zu sorgen. Er leistet Zahlung auf
-		Anweisung des Vorstandes. Die
-		Zeichnungsberechtigung regelt der Ausschuß. Über
-		den Kassenbestand hat er dem Vorstand und dem
-		Ausschuß auf Verlangen zu berichten und der
-		Hauptversammlung Rechenschaft abzulegen. Die
-		Mitglieder haben das Recht, bei der
-		Jahreshauptversammlung die Jahresrechnung
-		einzusehen.
-		
-		Der Kassenverwalter führt ein fortlaufendes
-		Mitgliederverzeichnis, aus welchem neben Namen,
-		Vornamen, Geburtstag, Wohnung und Beruf, der
-		Ein- und Austritt und die Art der Mitgliedschaft
-		ersichtlich sind. Er führt ein Inventarverzeichnis
-		über das Vereinsvermögen und eine Spenderliste.
-		
-		Rückständige Zahlungsverpflichtungen sind nach
-		angemessener Frist schriftlich anzumahnen. Erfolgt
-		innerhalb eines Monats keine Zahlung, ist dem
-		Vorsitzenden zu berichten.
-		
+		Der Kassenverwalter verwaltet die Kasse und führt die Rechung.
+    Er hat für den Einzug der Einnahmen zu sorgen.
+    Er leistet Zahlung auf Anweisung des Vorstandes.
+    Die Zeichnungsberechtigung regelt der Ausschuß.
+    Über den Kassenbestand hat er dem Vorstand und dem Ausschuß auf Verlangen zu berichten und der Hauptversammlung Rechenschaft abzulegen.
+    Die Mitglieder haben das Recht,
+    bei der Jahreshauptversammlung die Jahresrechnung einzusehen.
+
+		Der Kassenverwalter führt ein fortlaufendes Mitgliederverzeichnis,
+    aus welchem neben Namen,
+    Vornamen,
+    Geburtstag,
+    Wohnung und Beruf,
+    der Ein- und Austritt und die Art der Mitgliedschaft ersichtlich sind.
+    Er führt ein Inventarverzeichnis über das Vereinsvermögen und eine Spenderliste.
+
+		Rückständige Zahlungsverpflichtungen sind nach angemessener Frist schriftlich anzumahnen.Erfolgt innerhalb eines Monats keine Zahlung,
+    ist dem Vorsitzenden zu berichten.
+
 		\Clause{title={Der Ausbildungsleiter}}
-		Dem Ausbildungsleiter sind alle Fluglehrer und
-		Startwindenfahrer des Vereins unterstellt. Er teilt
-		die Auszubildenden den Fluglehrern zu, überwacht
-		die Ausbildung und den Leistungsstand der
-		Fluglehrer und aller Piloten. Er erteilt im
-		Benehmen mit dem zuständigen Fluglehrer die
-		Flugberechtigung und kann sie widerrufen. Dabei
-		sind die Regeln des Ausschusses zu beachten.
-		
-		Sind weitere Luftsportarten eingeführt, so ist die
-		Ausbildung unter sinngemäßer Anwendung des
-		Abs. 1 durch den Ausschuß zu regeln.
-		
+		Dem Ausbildungsleiter sind alle Fluglehrer und Startwindenfahrer des Vereins unterstellt.
+    Er teilt die Auszubildenden den Fluglehrern zu,
+    überwachtdie Ausbildung und den Leistungsstand der Fluglehrer und aller Piloten.
+    Er erteilt im Benehmen mit dem zuständigen Fluglehrer die Flugberechtigung und kann sie widerrufen.
+    Dabeisind die Regeln des Ausschusses zu beachten.
+
+		Sind weitere Luftsportarten eingeführt,
+    so ist die Ausbildung unter sinngemäßer Anwendung des Abs. 1 durch den Ausschuß zu regeln.
+
 		\Clause{title={Der Flugbetriebsleiter}}
-		Der Flugbetriebsleiter ist zuständig für die
-		ordentliche und sichere Durchführung
-		des Flugbetriebes im Rahmen der gesetzlichen
-		Bestimmungen und behördlicher Anordnungen.
-		
+		Der Flugbetriebsleiter ist zuständig für die ordentliche und sichere Durchführung des Flugbetriebes im Rahmen der gesetzlichen Bestimmungen und behördlicher Anordnungen.
+
 		\Clause{title={Der/Die technischen Leiter}}
-		Bau, Unterhaltung und Wartung der Flugzeuge,
-		Startwinden, Fahrzeuge, Nachrichtenmittel und
-		Hilfsgeräte geschehen unter Verantwortung des
-		Der/Die technischen Leiter. Bei Bedarf können für
-		diese Aufgabe mehrere Personen bestellt werden.
-		
-		Für die einzelnen Gerätearten sind Warte zu
-		bestellen, denen die notwendigen Hilfskräfte
-		zuzuteilen sind.
-		
-		Der/Die technischen Leiter ist für die
-		Einsatzbereitschaft jedes Gerätes verantwortlich,
-		er veranlaßt die Beschaffung von Ersatzteilen und
-		Betriebsstoffen und die Ausführung von
-		Instandsetzungen und Unterhaltsarbeiten.
-		
-		Der/Die technischen Leiter ist weisungsbefugt
-		gegenüber Warten und Hilfskräften. Er meldet
-		Verstöße dem Vorstand, der, notfalls nach
-		Beratung mit dem Ausschuß, für Abhilfe sorgt.
-		
+		Bau,
+    Unterhaltung und Wartung der Flugzeuge,
+		Startwinden,
+    Fahrzeuge,
+    Nachrichtenmittel und Hilfsgeräte geschehen unter Verantwortung des Der/Die technischen Leiter. Bei Bedarf können für diese Aufgabe mehrere Personen bestellt werden.
+
+		Für die einzelnen Gerätearten sind Warte zu bestellen,
+    denen die notwendigen Hilfskräfte zuzuteilen sind.
+
+		Der/Die technischen Leiter ist für die Einsatzbereitschaft jedes Gerätes verantwortlich,
+		er veranlaßt die Beschaffung von Ersatzteilen und Betriebsstoffen und die Ausführung von Instandsetzungen und Unterhaltsarbeiten.
+
+		Der/Die technischen Leiter ist weisungsbefugt gegenüber Warten und Hilfskräften.
+    Er meldet Verstöße dem Vorstand,
+    der,
+    notfalls nach Beratung mit dem Ausschuß,
+    für Abhilfe sorgt.
+
 		\Clause{title={Der Platz- und Hallenverwalter}}
-		Die Instandhaltung des Landeplatzes Albstadt-
-		Degerfeld und seiner Einrichtungen ist Aufgabe des
-		Platz- und Hallenverwalters. Er sorgt insbe-sondere
-		für Ordnung und Sauberkeit auf dem Platz, in den
-		Hallen und auf dem Vorplatz, den Wegen und
-		Parkplätzen. Die notwendigen Hilfs-kräfte sind ihm
-		auf Anforderung zur Verfügung zu stellen.
-		
+		Die Instandhaltung des Landeplatzes Albstadt-Degerfeld und seiner Einrichtungen ist Aufgabe des Platz- und Hallenverwalters.
+    Er sorgt insbesondere für Ordnung und Sauberkeit auf dem Platz,
+    in den Hallen und auf dem Vorplatz,
+    den Wegen und Parkplätzen.
+    Die notwendigen Hilfskräfte sind ihm auf Anforderung zur Verfügung zu stellen.
+
 		\Clause{title={Die Hauptversammlung}}
-		Die ordentliche Hauptversammlung
-		(Jahreshauptversammlung) findet alljährlich im
-		ersten Kalendervierteljahr statt. Der Vorstand hat
-		die Einladung unter Angabe von Zeitpunkt,
-		Tagungsort und Tagesordnung allen Mitgliedern
-		spätestens einen Monat zuvor durch einfachen
-		Brief oder per E-Mail zuzustellen.
-		
-		Außerordentliche Hauptversammlungen finden
-		statt, wenn es der Ausschuß beschließt oder ein
-		Viertel der ordentlichen und außerordentlichen
-		Mitglieder unter Angabe des Grundes, der in den
-		Vereinsaufgaben liegen muß, schriftlich beim
-		Vorstand beantragt. Bei unabweisbarem Bedarf
-		kann die Einberufungsfrist bis auf drei Tage
-		verkürzt werden.
-		Im Übrigen gelten die für die ordentliche
-		Hauptversammlung getroffenen Regelungen
-		entsprechend.
-		
-		Anträge der Mitglieder können in der
-		Hauptversammlung nur behandelt werden, wenn
-		sie spätestens bis zum 31. Januar schriftlich beim
-		Vorsitzenden mit Begründung eingegangen sind.
-		
-		Die Hauptversammlung ist ohne Rücksicht auf
-		die Zahl der erschienenen Mitglieder
-		beschlußfähig, wenn sie satzungsgemäß
-		einberufen ist. Hierüber ist vom Vorstand zu
-		Beginn der Versammlung Feststellung zu treffen.
-		
+		Die ordentliche Hauptversammlung (Jahreshauptversammlung) findet alljährlich im ersten Kalendervierteljahr statt.
+    Der Vorstand hat die Einladung unter Angabe von Zeitpunkt,
+		Tagungsort und Tagesordnung allen Mitgliedern spätestens einen Monat zuvor durch einfachen Brief oder per E-Mail zuzustellen.
+
+		Außerordentliche Hauptversammlungen finden statt,
+    wenn es der Ausschuß beschließt oder ein Viertel der ordentlichen und außerordentlichen Mitglieder unter Angabe des Grundes,
+    der in den Vereinsaufgaben liegen muß,
+    schriftlich beim Vorstand beantragt.
+    Bei unabweisbarem Bedarf kann die Einberufungsfrist bis auf drei Tage verkürzt werden.
+		Im Übrigen gelten die für die ordentliche Hauptversammlung getroffenen Regelungen entsprechend.
+
+		Anträge der Mitglieder können in der Hauptversammlung nur behandelt werden,
+    wenn sie spätestens bis zum 31. Januar schriftlich beim Vorsitzenden mit Begründung eingegangen sind.
+
+		Die Hauptversammlung ist ohne Rücksicht auf die Zahl der erschienenen Mitglieder beschlußfähig,
+    wenn sie satzungsgemäß einberufen ist.
+    Hierüber ist vom Vorstand zu Beginn der Versammlung Feststellung zu treffen.
+
 		Die Hauptversammlung ist zuständig für
-		a) Entgegennahme der Berichte des Ausschusses
-		und dessen Entlastung
-		b) Wahl des Vorstandes und der übrigen
-		Ausschussmitglieder sowie der beiden
-		Kassenprüfer, mit Ausnahme des Jugendleiters.
-		c) Festsetzung der Aufnahmebeiträge, der
-		Vereinsbeiträge und der Sonderzahlungen
-		d) Entscheidung über Beschwerden gegen
-		Beschlüsse des Ausschusses
-		e) Aufstellung des Haushaltsplanes
-		f) Zustimmung zu Anschaffung und Veräußerung
-		im Einzelfall von Vermögensgegenständen im Wert
-		von über Euro 15.ooo,--, wobei es sich um eine
-		Innenverhältnisregelung handelt
-		g) Zustimmung zu Schuldenaufnahme im Betrag
-		über Euro 15.000,--, wobei es sich um eine
-		Innenverhältnisregelung handelt
-		h) Aufnahme und Beendigung einzelner Sportarten
-		i) Änderung der Satzung
-		k) Auflösung des Vereins
-		
+    \begin{enumerate}[label=\alph*)]
+      \item Entgegennahme der Berichte des Ausschusses und dessen Entlastung
+      \item Wahl des Vorstandes und der übrigen Ausschussmitglieder sowie der beiden Kassenprüfer,
+      mit Ausnahme des Jugendleiters.
+      \item Festsetzung der Aufnahmebeiträge,
+      der Vereinsbeiträge und der Sonderzahlungen
+      \item Entscheidung über Beschwerden gegen Beschlüsse des Ausschusses
+      \item Aufstellung des Haushaltsplanes
+      \item Zustimmung zu Anschaffung und Veräußerung im Einzelfall von Vermögensgegenständen im Wert von über 15.ooo,-- Euro,
+      wobei es sich um eine Innenverhältnisregelung handelt
+      \item Zustimmung zu Schuldenaufnahme im Betrag über 15.000,-- Euro,
+      wobei es sich um eine Innenverhältnisregelung handelt
+      \item Aufnahme und Beendigung einzelner Sportarten
+      \item Änderung der Satzung
+      \item Auflösung des Vereins
+		\end{enumerate}
+
 		\Clause{title={Die Kassenprüfer}}
-		Die Kassenprüfer dürfen nicht Mitglieder des
-		Ausschusses sein.
-		
-		Den Kassenprüfern ist die Jahresrechnung nebst
-		allen Belegen mindestens zwei Wochen vor der
-		Jahreshauptversammlung zur Prüfung vorzulegen.
-		Der Befund ist der Jahreshauptversammlung vor
-		der Entlastung bekanntzugeben.
-		
-		Die Kassenprüfer sind verpflichtet, ihre Prüfung
-		auch auf die Satzungsmäßigkeit der Ausgaben und
-		den rechtzeitigen und vollständigen Einzug der
-		Einnahmen zu erstrecken. Sie haben insbesondere
-		auch die Abrechnung von Veranstaltungen und
-		etwaige Sonderkassen zu überwachen. Dazu
-		können sie Prüfungen auch während des
-		Geschäftsjahres und unverhofft vornehmen.
-		
+		Die Kassenprüfer dürfen nicht Mitglieder des Ausschusses sein.
+
+		Den Kassenprüfern ist die Jahresrechnung nebst allen Belegen mindestens zwei Wochen vor der Jahreshauptversammlung zur Prüfung vorzulegen. 
+    Der Befund ist der Jahreshauptversammlung vor der Entlastung bekanntzugeben.
+
+		Die Kassenprüfer sind verpflichtet,
+    ihre Prüfung auch auf die Satzungsmäßigkeit der Ausgaben und den rechtzeitigen und vollständigen Einzug der Einnahmen zu erstrecken.
+    Sie haben insbesondere auch die Abrechnung von Veranstaltungen und etwaige Sonderkassen zu überwachen.
+    Dazu können sie Prüfungen auch während des Geschäftsjahres und unverhofft vornehmen.
+
 		\Clause{title={Wahlen und Abstimmungen}}
-		Für Wahlen in der Hauptversammlung wählt
-		diese einen Wahlleiter und mind. 3 Wahlhelfer.
-		
-		Wahlen zum Vorstand finden geheim statt. Zum
-		übrigen Ausschuß kann offen gewählt werden,
-		wenn nur ein Bewerber vorgeschlagen ist und
-		niemand widerspricht. Das gleiche gilt für die
-		Kassenprüfer.
-		
-		Gewählt ist, wer mehr als die Hälfte der
-		abgegebenen Stimmen erhält. Erreicht im ersten
-		Wahlgang kein Bewerber die erforderliche
-		Mehrheit, so findet ein zweiter Wahlgang statt, bei
-		dem die relative Mehrheit entscheidet. Bei
-		Stimmengleichheit entscheidet das Los.
-		
-		Beschlüsse werden durch Abstimmung mit
-		einfacher Stimmenmehrheit gefaßt, soweit diese
-		Satzung nichts anderes vorschreibt. Bei
-		Stimmengleichheit ist die Abstimmung zu
-		wiederholen. Ergibt sich wieder
-		Stimmengleichheit, entscheidet die Stimme des
-		Versammlungsleiters.
-		
+		Für Wahlen in der Hauptversammlung wählt diese einen Wahlleiter und mind. 3 Wahlhelfer.
+
+		Wahlen zum Vorstand finden geheim statt.
+    Zum übrigen Ausschuß kann offen gewählt werden,
+		wenn nur ein Bewerber vorgeschlagen ist und niemand widerspricht.
+    Das gleiche gilt für die Kassenprüfer.
+
+		Gewählt ist,
+    wer mehr als die Hälfte der  abgegebenen Stimmen erhält.
+    Erreicht im ersten Wahlgang kein Bewerber die erforderliche Mehrheit,
+    so findet ein zweiter Wahlgang statt,
+    bei dem die relative Mehrheit entscheidet.
+    Bei Stimmengleichheit entscheidet das Los.
+
+		Beschlüsse werden durch Abstimmung mit einfacher Stimmenmehrheit gefaßt,
+    soweit diese Satzung nichts anderes vorschreibt.
+    Bei Stimmengleichheit ist die Abstimmung zu wiederholen.
+    Ergibt sich wieder Stimmengleichheit,
+    entscheidet die Stimme des Versammlungsleiters.
+
 		Stimmenthaltungen bleiben unberücksichtigt.
-		Betragen diese mehr als die Hälfte der
-		Stimmberechtigten, ist die Abstimmung zu
-		wiederholen. Ändern sich die Verhältnisse nicht, ist
-		der Antrag abgelehnt.
-		
+		Betragen diese mehr als die Hälfte der Stimmberechtigten,
+    ist die Abstimmung zu wiederholen.
+    Ändern sich die Verhältnisse nicht,
+    ist der Antrag abgelehnt.
+
 		\Clause{title={Satzungsänderungen}}
-		Die Änderung der Satzung bedarf der
-		Zweidrittelmehrheit der anwesenden
-		stimmberechtigten Mitglieder.
-		
-		Zur Änderung des Vereinszweckes ist die
-		Zustimmung von mehr als der Hälfte aller
-		stimmberechtigten Mitglieder erforderlich.
-		
+		Die Änderung der Satzung bedarf der Zweidrittelmehrheit der anwesenden stimmberechtigten Mitglieder.
+
+		Zur Änderung des Vereinszweckes ist die Zustimmung von mehr als der Hälfte aller stimmberechtigten Mitglieder erforderlich.
+
 		\Clause{title={Auflösung des Vereins}}
-		Bei Beratung und Beschluß über die Auflösung
-		des Vereins muß mindestens die Hälfte aller
-		stimmberechtigten Mitglieder anwesend sein. Der
-		Beschluß bedarf der Mehrheit von drei Vierteln
-		alleranwesenden Mitglieder.
-		
-		Ist weniger als die Hälfte der stimmberechtigten
-		Mitglieder anwesend, so ist eine neue
-		Versammlung einzuberufen, die ohne Rücksicht auf
-		die Zahl der erschienenen Mitglieder beschlußfähig
-		ist.
-		
-		Im Falle der Auflösung des Vereins wird das
-		Vermögen nach Tilgung aller Schulden der Stadt
-		Albstadt zur Verwaltung übertragen mit der
-		Verpflichtung, es einem späteren Verein mit
-		derselben Zielsetzung zu übergeben. Bildet sich
-		innerhalb von fünf Jahren im Verwaltungsraum
-		Albstadt kein solcher Verein, so fällt das Vermögen
-		endgültig der Stadt Albstadt zu, die es
-		ausschließlich und unmittelbar für gemeinnützige
-		sportliche Zwecke zu verwenden hat.
+		Bei Beratung und Beschluß über die Auflösung des Vereins muß mindestens die Hälfte aller stimmberechtigten Mitglieder anwesend sein.
+    Der Beschluß bedarf der Mehrheit von drei Vierteln aller anwesenden Mitglieder.
+
+		Ist weniger als die Hälfte der stimmberechtigten Mitglieder anwesend,
+    so ist eine neue Versammlung einzuberufen,
+    die ohne Rücksicht auf die Zahl der erschienenen Mitglieder beschlußfähig ist.
+
+		Im Falle der Auflösung des Vereins wird das Vermögen nach Tilgung aller Schulden der Stadt Albstadt zur Verwaltung übertragen mit der Verpflichtung,
+    es einem späteren Verein mit derselben Zielsetzung zu übergeben.
+    Bildet sich innerhalb von fünf Jahren im Verwaltungsraum Albstadt kein solcher Verein,
+    so fällt das Vermögen endgültig der Stadt Albstadt zu,
+    die es ausschließlich und unmittelbar für gemeinnützige sportliche Zwecke zu verwenden hat.
 		\end{multicols}
 	\end{contract}	
 	
