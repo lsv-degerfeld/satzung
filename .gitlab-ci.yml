@@ -1,0 +1,13 @@
+stages:
+  - build
+  - deploy
+
+compile:
+  image: texlive/texlive
+  stage: build
+  script:
+    - latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" Satzung.tex
+  artifacts:
+    untracked: true
+    expire_in: 1 week
+  when: on_success
