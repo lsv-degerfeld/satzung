@@ -8,6 +8,8 @@ compile:
   script:
     - latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" Satzung.tex
   artifacts:
+    paths:
+      - Satzung.pdf
     untracked: true
     expire_in: 1 week
   when: on_success
