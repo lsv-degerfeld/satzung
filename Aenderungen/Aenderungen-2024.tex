@@ -7,8 +7,10 @@
 \usepackage{enumitem}
 \usepackage[dvipsnames]{xcolor}
 
+\usepackage{pdfpages}
+
 \usepackage{geometry}
-\geometry{a4paper,left=25mm,right=25mm,top=25mm,bottom=45mm}
+\geometry{left=25mm,right=25mm,top=25mm,bottom=45mm}
 \usepackage[
 automark, % Kapitelangaben in Kopfzeile automatisch erstellen
 headsepline, % Trennlinie unter Kopfzeile
@@ -22,13 +24,13 @@ ilines % Trennlinie linksbündig ausrichten
 \pagestyle{scrheadings}
 \clearpairofpagestyles
 
-\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\usepackage{todonotes}
 
 % Kopfzeile
 \renewcommand{\headfont}{\normalfont} % Schriftform der Kopfzeile
 \ihead{Satzungsänderungen 2024\\\textit{\headmark}}
 \chead{\scriptsize{Vorschläge für eine Satzungsänderung im Jahr 2024}\\[1.5ex]}
-\ohead{\includegraphics[scale=0.075]{Logo.png}}
+\ohead{\includegraphics[scale=0.075]{../Logo.png}}
 \setlength{\headheight}{20mm} % Höhe der Kopfzeile
 \automark{section}
 
@@ -52,47 +54,74 @@ ilines % Trennlinie linksbündig ausrichten
 \addtokomafont{disposition}{\rmfamily} 
 \addtokomafont{contract.Clause}{\rmfamily}
 \renewcommand{\rmdefault}{phv}
+\renewcommand{\familydefault}{\sfdefault}
 
 \usepackage[hidelinks]{hyperref}
-
+\usepackage{changepage}
 
 \title{Satzungsänderungen 2024}
-\subtitle{Vorschläge für eine Satzungsänderung im Jahr 2024}
+\subtitle{Vorschläge für eine Satzungsänderung des LSV Degerfeld im Jahr 2024}
+\author{Patrica Beer, Martin Schick, Florian Lubitz}
 
 \newcommand{\new}[1]{\textcolor{Green}{#1}}
 \newcommand{\old}[1]{\textcolor{Red}{#1}}
-\newcommand{\compare}[3]{\subsection*{#1}\begin{multicols}{2}#2\columnbreak\\#3\end{multicols}}
+\newcommand{\change}[1]{
+  \begin{adjustwidth}{20pt}{20pt}
+    #1
+  \end{adjustwidth}
+}
+\newcommand{\compare}[3]{\change{\subsubsection*{#1}\begin{multicols}{2}#2\columnbreak\\#3\end{multicols}}}
+
 
 \begin{document}
-\maketitle
-% \thispagestyle{plain}
-% \begin{center}
-%   \includegraphics[scale=0.2]{Logo.png}\\[5ex]
-  
-%   \Huge{\textbf{Satzung}}\\[1.5ex]
-%   \large{nach der Satzungsänderung in der Mitgliederversammlung vom}\\[1.5ex]
-  
-%   \normalsize
-  
-%   \textbf{\Large{XX. XXXXXX XXXX}}\\
-  
-% \end{center}
+% \maketitle
+\begin{titlepage}
 
-  \section{Vorwort}
-  Die Satzung des Luftsportverein Degerfeld e.V. wurde zuletzt im Jahr 2018 geändert. Seither haben sich einige Möglichkeiten zur Verbesserung ergeben, die in der Satzung festgehalten werden sollten. Die Änderungen werden in diesem Dokument vorgeschlagen und sollen in der Mitgliederversammlung 2024 beschlossen werden.
+  \begin{center}
+  \includegraphics[scale=0.2]{../logo}\\[15ex]
+  
+  % \\[10ex]
+  
+  \large{Antrag für die nächste Mitgliederversammlung}\\[2ex]
+  
+  \LARGE{\textbf{Satzungsänderungen 2024}}\\[2ex]
+  \large{Vorschläge für eine Satzungsänderung des LSV Degerfeld im Jahr 2024}\\[30ex]
+  
+  \normalsize
+  
+  \textbf{eingereicht am {\today}}\\[1.5ex]
+  Patrica Beer\\ Martin Schick\\ Florian Lubitz
+  \\[3ex]
+  
+  \end{center}
+  
+  \end{titlepage}
 
-  Die Änderungen sind in mehrere Themenbereiche unterteilt. Im Folgenden werden die Änderungen kurz erläutert und begründet. Außerdem werden die Änderungen gegenübergestellt, wobei links die bisherige Formulierung und rechts die neue Form dargestellt ist. Die Neuerungen sind in \new{grün} markiert. Die ensprechende bisherige Formulierung ist in \old{rot} markiert. Im Folgenden ein Beispiel, das die Farbgebung verdeutlicht und nicht Teil der Satzungsänderungen ist:
+
+\clearpage
+
+
+\section*{Vorwort}
+Die Satzung des Luftsportverein Degerfeld e.V. wurde zuletzt im Jahr 2018 geändert. Seither haben sich einige Möglichkeiten zur Verbesserung ergeben, die in der Satzung festgehalten werden sollten. Die Änderungen werden in diesem Dokument vorgeschlagen und sollen in der Mitgliederversammlung 2024 beschlossen werden. Die Änderungen sind in mehrere Themenbereiche unterteilt. Im Folgenden werden die Änderungen erläutert und begründet.
+
+
+\tableofcontents
+\clearpage
+
+\section*{Art der Gegenüberstellung}
+
+   Auf den Folgenden Seiten werden die Änderungen gegenübergestellt, wobei links die bisherige Formulierung und rechts die neue Form dargestellt ist. Die Neuerungen sind in \new{grün} markiert. Die ensprechende bisherige Formulierung ist in \old{rot} markiert. Im Folgenden ein Beispiel, das die Farbgebung verdeutlicht und nicht Teil der Satzungsänderungen ist:
 
   \compare{§15 Absatz 2 Satz 3}
   {\old{Alle} Mitglieder haben das Recht, \old{bei der Jahreshauptversammlung} die Jahresrechnung einzusehen.}
   {\new{Die} Mitglieder haben das Recht, \new{nach dem Kassenabschluss} die Jahresrechnung einzusehen.}
 
 
-
   \section{Rechtschreibung und kleine Korrekturen ohne inhaltliche Änderung}
   In unserer Satzung haben sich im Laufe der Jahre einige Rechtschreibfehler eingeschlichen. Diese sollten korrigiert werden.
   Ein Beispiel ist die Schreibweise von "`Auschuß"'. Dieser sollte einheitlich als "`Ausschuss"' geschrieben werden\footnote{https://www.duden.de/node/11150/revision/1394026}.
   Außerdem wird die Abkürzung von "`eingetragener Verein"' von "`eV"' auf "`e.V."' geändert\footnote{https://www.duden.de/node/135659/revision/1319174}.
+  Ebenso ist die korrekte (große) Schreibweise des Technischen Leiter und die Mehrzahl desselben bisher nicht durchgängig umgesetzt. Dies ist hier auch behoben.
 
 
 
@@ -138,7 +167,8 @@ ilines % Trennlinie linksbündig ausrichten
     wobei sich Vorstand und \new{Ausschuss} über die Meinung der Mitglieder orientieren können.
   }
 
-  \subsection*{§11 Absatz 1}\begin{multicols}{2}
+  \change{
+  \subsubsection*{§11 Absatz 1}\begin{multicols}{2}
     Organe des Vereins sind:
     \begin{enumerate}[noitemsep]
       \item der Vorstand
@@ -153,6 +183,7 @@ ilines % Trennlinie linksbündig ausrichten
       \item die Hauptversammlung
     \end{enumerate}
     \end{multicols}
+  }
 
   \compare{§12 Absatz 4}
   {In dringenden Angelegenheiten,
@@ -170,6 +201,8 @@ ilines % Trennlinie linksbündig ausrichten
   {§ 13 Der \old{Ausschuß}}
   {§ 13 Der \new{Ausschuss}}
 
+  \todo[inline]{Technische/n Leiter. Das wird mal ein Einzahl, mal in Mehrzahl geschrieben. An einigen Stellen ist es durch das hinzufügen von /n gelöst, an anderen Stellen müssen jedoch ganze Sätze umgebaut werden. Vermutlich wurde das mal geändert aber inkonsequent nur an den einfachen Stellen. Soll das so bleiben oder soll das einheitlich werden? Wenn ja, wie? Einzahl oder Mehrzahl? Wenn in Mehrzahl, müssten deutlich mehr Absätze angepasst werden. Wenn in Einzahl, müssten die Absätze mit /n angepasst werden.}
+
   \compare{§13 Absatz 2 Satz 1}
   {Der \old{Ausschuß} und damit auch der Vorstand werden auf zwei Jahre gewählt.}
   {Der \new{Ausschuß} und damit auch der Vorstand werden auf zwei Jahre gewählt.}
@@ -180,14 +213,10 @@ ilines % Trennlinie linksbündig ausrichten
 
   \compare{§13 Absatz 5}{    
   Der \old{Ausschuß} muß einberufen werden,
-    wenn es ein Drittel seiner Mitglieder unter Angabe des Grundes,
-    der in den Aufgaben des Vereins liegen muß,
-    beim Vorstand schriftlich beantragt.
+    wenn es ein Drittel seiner Mitglieder \dots beim Vorstand schriftlich beantragt.
   }
   {Der \new{Ausschuss} muß einberufen werden,
-  wenn es ein Drittel seiner Mitglieder unter Angabe des Grundes,
-  der in den Aufgaben des Vereins liegen muß,
-  beim Vorstand schriftlich beantragt.}
+  wenn es ein Drittel seiner Mitglieder \dots beim Vorstand schriftlich beantragt.}
   \compare{§13 Absatz 6 Satz 1}
   {Der \old{Ausschuß} beschließt durch Abstimmung.}
   {Der \new{Ausschuss} beschließt durch Abstimmung.}
@@ -206,6 +235,13 @@ ilines % Trennlinie linksbündig ausrichten
   \compare{§18 Absatz 2}{Sind weitere Luftsportarten eingeführt, so ist die Ausbildung unter sinngemäßer Anwendung des
   Abs. 1 durch den \old{Ausschuß} zu regeln.}{Sind weitere Luftsportarten eingeführt, so ist die Ausbildung unter sinngemäßer Anwendung des
   Abs. 1 durch den \new{Ausschuss} zu regeln.}
+
+  \compare{§20 Absatz 1 Satz 1}
+  {Bau, Unterhaltung und Wartung der Flugzeuge, \dots und Hilfsgeräte geschehen unter Verantwortung \old{des Der/Die technischen Leiter}.}
+  {Bau, Unterhaltung und Wartung der Flugzeuge, \dots und Hilfsgeräte geschehen unter Verantwortung \new{des/der Technischen Leiter}.}
+  
+
+  \todo[inline]{Der Technischen Leiter weiter anschauen, überall ändern oder zurück auf Einzahl??}
 
   \compare{§20 Absatz 4 Satz 2}{
     Er meldet Verstöße dem Vorstand, der, notfalls nach Beratung mit dem \old{Ausschuß}, für Abhilfe sorgt.
@@ -230,19 +266,20 @@ ilines % Trennlinie linksbündig ausrichten
   \compare{§24 Absatz 2 Satz 2}
   {Zum übrigen \old{Ausschuß} kann offen gewählt werden, wenn nur ein Bewerber vorgeschlagen ist und niemand widerspricht.}
   {Zum übrigen \new{Ausschuss} kann offen gewählt werden, wenn nur ein Bewerber vorgeschlagen ist und niemand widerspricht.}
-
+  \clearpage
   \section{Personenbezeichnungen}
   Um die Satzung geschlechtsneutral zu gestalten sollen alle Personenbezeichnungen in der Satzung für alle Geschlechter gelten. Dies soll im ersten Paragraphen festgehalten werden.
 
   \compare{§1 Absatz 4}{\em Bisher nicht vorhanden \em}{Sämtliche Personenbezeichnungen gelten für die Geschlechter männlich, weiblich und divers.}
 
-
+  \clearpage
   \section{Mitgliedschaft auf Probe}
   Bisher mussten sich neue Mitglieder beim Ausschuss vorstellen und dieser hat auf Grund dieser Vorstellung dann um die Aufnahme in den Verein beschlossen. Dieser Vorgang sollte vor allem den Verein vor potentiell Vereinsschädigenden oder andersweitig ungeeigneten Mitgliedern schützen. In der Praxis hat sich gezeigt, dass dieser Vorgang nicht mehr zeitgemäß ist und die Aufnahme in den Verein unnötig verzögert. Deshalb soll die Mitgliedschaft auf Probe eingeführt werden. Möchte eine Person Ordentliches Mitglied im Verein werden, so kann sie dies bei der Vorstandschaft beantragen. Die Vorstandschaft entscheidet dann inital über die Aufnahme in den Verein. Anschließend wird die Person für ein Jahr als Mitglied auf Probe geführt. Vor Ablauf des Jahres entscheidet der Ausschuss über die Aufnahme in den Verein. Somit haben neue Mitglieder die Möglichkeit, sich in Ruhe in den Verein einzufinden und die Mitglieder des Vereins kennenzulernen und der Verein hat die Möglichkeit das neue Mitglied kennenzulernen und zu entscheiden, ob es in den Verein passt. Die Mitgliedschaft wird automatisch nach einem Jahr in eine ordentliche Mitgliedschaft umgewandelt, wenn der Ausschuss nicht anders entscheidet. Im Vergleich zum bisherigen Verfahren ermöglicht dies eine schnellere Aufnahme und eine bessere Möglichkeit für Mitglied und Verein sich kennenzulernen und zu entscheiden, ob eine Mitgliedschaft im Verein sinnvoll ist. Bei einer fördernden Mitgliedschaft einfällt die Probemitgliedschaft und der Vorstand entscheidet direkt über die Aufnahme.
 
-  Diese Regelung ist angelehnt an vergleichbare Regeln in anderen Flugsportvereinen wie beispielsweise dem Luftsportring Aalen e.V.\footnote{https://www.lsr-aalen.de/images/besucher/allgemeines/verein/lsr\_satzung\_2020.pdf} oder dem \todo{hier weitere Vereine einfügen}.
+  Diese Regelung ist angelehnt an vergleichbare Regeln in anderen Flugsportvereinen wie beispielsweise dem Luftsportring Aalen e.V.\footnote{https://www.lsr-aalen.de/images/besucher/allgemeines/verein/lsr\_satzung\_2020.pdf} oder dem \todo[inline]{hier weitere Vereine einfügen}.
 
-  \subsection*{§4 Absatz 1}
+  \change{
+  \subsubsection*{§4 Absatz 1}
   \begin{multicols}{2}
     Mitglieder des Vereins sind:
     \begin{enumerate}[noitemsep]
@@ -259,8 +296,10 @@ ilines % Trennlinie linksbündig ausrichten
       \item \new{Mitglieder auf Probe}
     \end{enumerate}
     \end{multicols}
+  }
 
     \compare{§5 Absatz 2}{Über die Aufnahme entscheidet der \old{Ausschuß}.}{Über die Aufnahme entscheidet der \new{Vorstand}.}
+    \clearpage
     \compare{§5 Absatz 4}{\em Bisher nicht vorhanden \em}{Wird eine aktive Mitgliedschaft beantragt,
     so besteht diese zunächst für ein Jahr auf Probe,
     beginnend mit der Annahme des Aufnahmeantrags durch den Vorstand.
@@ -275,9 +314,9 @@ ilines % Trennlinie linksbündig ausrichten
     Bis zum Abschluss dieses vereinsinternen Verfahrens ruhen sämtliche Rechte und Pflichten des betroffenen Mitglieds.
     Bei einer endgültigen Ablehnung wird die entrichtete Aufnahmegebühr in voller Höhe zurückerstattet.
     Die endgültige Ablehnung führt zum Verlust der Mitgliedschaft.}
-    \todo{Ordentlicher Umbruch}
 
-    \subsection*{§6 Absatz 1}
+    \change{
+    \subsubsection*{§6 Absatz 1}
     \begin{multicols}{2}
     Die Mitgliedschaft erlischt durch
     \begin{enumerate}[label=\alph*)]
@@ -294,22 +333,26 @@ ilines % Trennlinie linksbündig ausrichten
       \item \new{Ablehnung der Dauermitgliedschaft bei Mitgliedschaft auf Probe}
     \end{enumerate}
   \end{multicols}
+  }
 
-
-\compare{§8 Absatz 3}
-{Aktive Ordentliche Mitglieder gemäß § 4 Punkt 1a und Punkt 1b der Satzung sind verpflichtet, an der Vereinsarbeit teilzunehmen.}
-{Aktive Ordentliche Mitglieder sowie Mitglieder auf Probe gemäß § 4 Punkt 1a, Punkt 1b und Punkt 4 der Satzung sind verpflichtet, an der Vereinsarbeit teilzunehmen.}
+  \clearpage
+  \compare{§8 Absatz 3}
+  {Aktive Ordentliche Mitglieder gemäß § 4 Punkt 1a und Punkt 1b der Satzung sind verpflichtet, an der Vereinsarbeit teilzunehmen.}
+  {Aktive Ordentliche Mitglieder sowie Mitglieder auf Probe gemäß § 4 Punkt 1a, Punkt 1b und Punkt 4 der Satzung sind verpflichtet, an der Vereinsarbeit teilzunehmen.}
 
 \compare{§9 Absatz 1}
 {Die aktiven ordentlichen Mitglieder gemäß § 4 Punkt 1a und Punkt 1b sowie die Ehrenmitglieder der Satzung sind berechtigt, die Fluggeräte nach den Beschlüssen des Ausschusses und den Anordnungen des Ausbildungsleiters, der Fluglehrer und Flugleiter zu benützen und an den Veranstaltungen des Vereins teilzunehmen.}
 {Die aktiven ordentlichen Mitglieder und Mitglieder auf Probe gemäß § 4 Punkt 1a, Punkt 1b und Punkt 4 sowie die Ehrenmitglieder der Satzung sind berechtigt, die Fluggeräte nach den Beschlüssen des Ausschusses und den Anordnungen des Ausbildungsleiters, der Fluglehrer und Flugleiter zu benützen und an den Veranstaltungen des Vereins teilzunehmen.}
     
   \section{Streichung von der Mitgliederliste und Auflösung juristischer Personen}
-  War bisher ein Mitglied mit Zahlungsverpflichtungen im Verzug, so war der Ausschuss berechtigt über den Ausschluss des Mitglieds zu entscheiden. Dieser Vorgang ist jedoch recht aufwändig und wird in den meisten Vereinen anders gehandhabt. Daher soll die Streichung von der Mitgliederliste als weitere Form des Erlöschen der Mitgliedschaft aufgenommen werden.
+  Bisher lag die Entscheidung über den Ausschluss eines Mitglieds, das mit seinen Zahlungsverpflichtungen im Verzug war, in der Zuständigkeit des Ausschusses. Dieser Prozess ist jedoch recht aufwändig und wird in vielen Vereinen anders gehandhabt. Um eine effizientere und praktikablere Lösung zu schaffen, schlagen wir vor, die Streichung von der Mitgliederliste als zusätzliche Möglichkeit des Erlöschens der Mitgliedschaft in die Satzung aufzunehmen.
 
-  Wird eine juristische Person aufgelöst, so erlischt die Mitgliedschaft automatisch. Dies soll in der Satzung entsprechend festgehalten werden.
+  Die Streichung von der Mitgliederliste ermöglicht eine schnellere und unkompliziertere Handhabung von Mitgliedschaften, bei denen Zahlungsverpflichtungen über einen längeren Zeitraum nicht erfüllt wurden. Durch diese Maßnahme kann der Verein seine Mitgliederliste auf dem aktuellen Stand halten und gleichzeitig sicherstellen, dass nur diejenigen Mitglieder aktiv bleiben, die ihren Verpflichtungen nachkommen.
 
-  \subsection*{§6 Absatz 1}
+  Des Weiteren schlagen wir vor, in der Satzung festzuhalten, dass die Mitgliedschaft automatisch erlischt, wenn eine juristische Person aufgelöst wird. Diese Regelung bietet eine klare und automatische Lösung für den Fall, dass eine juristische Person, die Mitglied des Vereins ist, ihre rechtliche Existenz beendet.
+
+  \change{
+  \subsubsection*{§6 Absatz 1}
   \begin{multicols}{2}
   Die Mitgliedschaft erlischt durch
   \begin{enumerate}[label=\alph*)]
@@ -326,14 +369,20 @@ ilines % Trennlinie linksbündig ausrichten
     \item \new{Streichung von der Mitgliederliste}
   \end{enumerate}
 \end{multicols}
-
+  }
 \compare{§6 Absatz 4}{\em Bisher nicht vorhanden \em}{Ein Mitglied kann durch Beschluss des Vorstands von der Mitgliederliste gestrichen werden,
 wenn das Mitglied trotz schriftlicher Mahnung mit der Zahlung von Beiträgen oder sonstigen Zahlungen länger als 6 Monate im Rückstand ist.
 Die Streichung ist dem Mitglied schriftlich mitzuteilen.}
 
 
   \section{Erhöhung der Freigabebeträge}
-  In den letzen Jahren haben wir einen stetigen Anstieg der Kosten für alltägliche Gegenstände aber auch für Betriebsmittel, Flugzeug- und die Flugplatzunterhaltung feststellen können. Um unter diesen Umständen weiterhin schnell und flexibel handlen zu können, sollten wir die Verfügungsrähmen für den Vorstand (auf bis zu 3.000 Euro) und den Ausschuss (auf 20.000 Euro) erhöhen. 
+  In Anbetracht des kontinuierlichen Anstiegs der Kosten für alltägliche Gegenstände sowie für Betriebsmittel, Flugzeug- und Flugplatzunterhaltung in den letzten Jahren, steht der Verein vor der Herausforderung, finanzielle Flexibilität zu bewahren und gleichzeitig effizient handeln zu können. Um diesen Anforderungen gerecht zu werden und sicherzustellen, dass der Verein weiterhin schnell und flexibel agieren kann, schlagen wir vor, die Verfügungsbeträge für den Vorstand und den Ausschuss anzupassen.
+
+  Der Vorstand, als maßgebliches Entscheidungsgremium, sollte einen erhöhten Verfügungsbetrag von bis zu 3.000 Euro erhalten. Dies ermöglicht es dem Vorstand, zeitnahe Entscheidungen zu treffen und operative Angelegenheiten ohne unnötige Verzögerungen zu handhaben. Die Erhöhung des Verfügungsbetrags ist insbesondere vor dem Hintergrund der gestiegenen Kosten für alltägliche Ausgaben von großer Bedeutung, um eine effiziente Vereinsführung zu gewährleisten.
+  
+  Gleichzeitig schlagen wir vor, den Verfügungsbetrag für den Ausschuss auf 20.000 Euro zu erhöhen. Der Ausschuss spielt eine entscheidende Rolle bei der Planung und Umsetzung von langfristigen Projekten sowie bei der Bewältigung finanzieller Herausforderungen. Die Erhöhung des Verfügungsbetrags gibt dem Ausschuss den Spielraum, um notwendige Investitionen zu tätigen und strategische Initiativen zu unterstützen, die zum langfristigen Erfolg des Vereins beitragen.
+  
+  Diese Anpassungen der Verfügungsbeträge sind als proaktiver Schritt zu betrachten, um den sich ändernden wirtschaftlichen Realitäten und den steigenden Kosten Rechnung zu tragen. Indem wir die finanziellen Handlungsspielräume des Vorstands und des Ausschusses erweitern, stärken wir die Handlungsfähigkeit des Vereins und ermöglichen eine effektive Reaktion auf aktuelle und zukünftige Herausforderungen.
 
   \compare{§11 Absatz 3}{
     Im Innenverhältnis bedarf der Vorstand für Erwerb und Veräußerung von Vermögensgegenständen über \old{€ 1.500,--} im Einzelfall der vorherigen Zustimmung des Ausschusses.
@@ -347,32 +396,217 @@ Die Streichung ist dem Mitglied schriftlich mitzuteilen.}
     Vorstand oder der Hauptversammlung vorbehalten sind. Dies sind insbesondere\\\dots\\
     e) Vergabe von Aufträgen im Gegenwert von mehr als \new{3.000 Euro}\\\dots}
 
-  \compare{§22 Absatz 5 Punkt g)}
+  \compare{§22 Absatz 5 Punkt f)}
   {Die Hauptversammlung ist zuständig für: \\ \dots\\
-    g) Zustimmung zu Anschaffung und Veräußerung im Einzelfall von Vermögensgegenständen im Wert von über \old{€ 15.ooo,--}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
-  {Die Hauptversammlung ist zuständig für: \\ \dots\\g) Zustimmung zu Anschaffung und Veräußerung im Einzelfall von Vermögensgegenständen im Wert von über \new{20.000 Euro}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
+    f) Zustimmung zu Anschaffung und Veräußerung im Einzelfall von Vermögensgegenständen im Wert von über \old{€ 15.ooo,--}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
+  {Die Hauptversammlung ist zuständig für: \\ \dots\\f) Zustimmung zu Anschaffung und Veräußerung im Einzelfall von Vermögensgegenständen im Wert von über \new{20.000 Euro}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
 
-  \compare{§22 Absatz 5 Punkt h)}
-  {Die Hauptversammlung ist zuständig für: \\ \dots\\h) Zustimmung zu Schuldenaufnahme im Betrag über \old{€ 15.000,--}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
-  {Die Hauptversammlung ist zuständig für: \\ \dots\\h) Zustimmung zu Schuldenaufnahme im Betrag über \new{20.000 Euro}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
+  \compare{§22 Absatz 5 Punkt g)}
+  {Die Hauptversammlung ist zuständig für: \\ \dots\\g) Zustimmung zu Schuldenaufnahme im Betrag über \old{€ 15.000,--}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
+  {Die Hauptversammlung ist zuständig für: \\ \dots\\g) Zustimmung zu Schuldenaufnahme im Betrag über \new{20.000 Euro}, wobei es sich um eine Innenverhältnisregelung handelt\\\dots}
 
   \section{Änderung der Zusammensetzung des Vorstands}
-  \todo{Introtext}
-  \section{Verkleinerung des Ausschusses um die Beisitzer}
-  \todo{Introtext}
-  \section{Anpassung der zu entlastenden Ämter}
-  \todo{Introtext}
-  \section{Änderung des Zeitpunktes der Mitgliederversammlung}
-  \todo{Introtext}
-  \section{Aufnahme von Ordnungen in die Satzung}
-  \todo{Introtext}
-  \section{Hinzufügen von Strafbestimmungen}
-  \todo{Introtext}
-  \section{Hinzufügen einer Datenschutzordnung}
-  \todo{Introtext}
-  \section{Einführung eines Ehrenrates}
-  \todo{Introtext}
+  \label{sec:vorstand}
+  \todo[inline]{Introtext}
+  \todo[inline]{Änderungen gegenüberstellen}
+
+
+
+
+
+  \section{Verkleinerung des Ausschusses um die Beisitzer und Nachbesetzung}
+  Die Größe unseres Ausschusses ist über die Jahre stetig gewachsen und umfasst im Moment \todo{checken} 15 Personen. Diese Anzahl an Personen ist für die Entscheidungsfindung im Verein nicht unbedingt notwendig und unter Umständen schwer zu koordinieren. Insbesondere das Finden von Terminen für Ausschusssitzungen zeigt sich als problembehaftet. Des öfteren ist der Auschuss nicht beschlussfähig, da unzureichend Mitglieder in der Sitzung anwesend sind. Dies führt zu Verzögerungen bei Entscheidungen und kann unter Umständen zu Problemen führen, wenn Entscheidungen nicht rechtzeitig getroffen werden können. Um die Effizienz des Ausschusses zu erhöhen und die Entscheidungsfindung zu beschleunigen, schlagen wir vor, die Anzahl der Ausschussmitglieder zu reduzieren. Dazu sollen die Positionen der Beisitzer aufgelöst werden.
+
+  \change{
+  \subsubsection*{§13 Absatz 1 Satz 1}
+  \begin{multicols}{2}
+  Mitglieder des Ausschusses sind:
+    \begin{itemize}[noitemsep]
+      \item der Vorsitzende
+      \item der 1. stellvertretendeVorsitzende
+      \item der 2. stellvertretende Vorsitzende
+      \item der Kassenverwalter
+      \item der Ausbildungsleiter
+      \item der/die Technischer Leiter
+      \item der Flugbetriebsleiter
+      \item der Platz- und Hallenverwalter
+      \item der Jugendleiter
+      \item der Schriftführer
+      \item der Pressewart
+      \item \old{4 Beisitzer}
+    \end{itemize}
+  \columnbreak
+  Mitglieder des Ausschusses sind:
+    \begin{itemize}[noitemsep]
+      \item der Vorsitzende
+      \item der 1. stellvertretendeVorsitzende
+      \item der 2. stellvertretende Vorsitzende
+      \item der Kassenverwalter
+      \item der Ausbildungsleiter
+      \item der/die Technischer Leiter
+      \item der Flugbetriebsleiter
+      \item der Platz- und Hallenverwalter
+      \item der Jugendleiter
+      \item der Schriftführer
+      \item der Pressewart
+    \end{itemize}
+  \end{multicols}
+  }
+
+  Um die Nachbesetzung für ausgeschiedene Ausschussmitglieder besser zu definieren soll der entsprechende Absatz etwas angepasst werden und auch die Definition der Wahlperiode soll verdeutlicht werden.
+
+  \compare{§ 13 Absatz 2}{Der Ausschuß und damit auch der Vorstand werden \old{auf zwei Jahre} gewählt. Wiederwahl ist zulässig.}{Der Ausschuss und damit auch der Vorstand werden \new{von der Mitgliederversammlung auf die Dauer von zwei Jahren,
+  vom Tage der Wahl an gerechnet,} gewählt. \new{Er bleibt jedoch bis zur Neuwahl des Ausschusses beziehungsweise des Vorstandes im Amt.}
+  Wiederwahl ist zulässig.}
   
+  \compare{§ 13 Absatz 3 Punkt f)}{Ersatz der während der Amtszeit ausscheidenden Mitglieder des Ausschusses (ohne Vorstand) bis zur nächsten Hauptversammlung}{Ersatz der während der Amtszeit ausscheidenden Mitglieder des Ausschusses (ohne Vorstand) bis zur nächsten Hauptversammlung \new{durch Zuwahl.}}
+
+  \section{Anpassung der zu entlastenden Ämter}
+  Da nur der Vorstand nach §26 BGB die Rechts und Geschäftsfähigkeit des Vereins besitzt, ist es nicht sinnvoll, den Ausschuss zu entlasten. Mit der Änderung in \autoref*{sec:vorstand} ist damit auch der Kassier inbegriffen und somit alle zu entlastenden Ämter enthalten. Deshalb soll die Entlastung des Ausschusses aus der Satzung gestrichen werden. Hierzu wird in §22 Absatz 5 ein Punkt nach a) eingefügt und die bisherigen Punkte b) bis j) werden um einen Buchstaben nach hinten verschoben.
+
+  \compare{§22 Absatz 5 Punkt a)}
+  {Die Hauptversammlung ist zuständig für: \\a) Entgegennahme der Berichte des Ausschusses \old{und dessen Entlastung}\\
+  \old{b)} Wahl des Vorstandes und der übrigen Ausschussmitglieder sowie der beiden Kassenprüfer, mit Ausnahme des Jugendleiters.\\\dots}
+  {Die Hauptversammlung ist zuständig für: \\a) Entgegennahme der Berichte des Ausschusses\\
+  \new{b) Entlastung des vertretungsberechtigten Vorstandes nach §26 BGB (§ 12 Absatz 1 Satz 1)}\\
+  \new{c)} Wahl des Vorstandes und \dots \\\dots}
+  
+  \section{Änderung des Zeitpunktes der Mitgliederversammlung}
+  Gemäß der aktuellen Satzung ist die Hauptversammlung im ersten Quartal des Jahres anberaumt. Bislang stand unser Kassier jedoch vor der Herausforderung, den Rechnungsabschluss nach Erhalt der Daten vom Steuerberater unter erheblichem Zeitdruck zu erstellen. Diese zeitliche Enge hatte leider in der Vergangenheit negative Auswirkungen auf die Qualität des Abschlusses. Zusätzlich wurde im bereits laufenden Jahr der Haushaltsplan vorgestellt und verabschiedet.
+  
+  Um diesem Zeitdruck entgegenzuwirken und eine qualitativ hochwertige Arbeit zu gewährleisten, schlagen wir vor, die Satzung dahingehend zu ändern, dass eine Hauptversammlung künftig mindestens einmal jährlich stattfindet, idealerweise im Oktober. Während dieser Versammlung sollen der Rechnungsabschluss des Vorjahres und der Haushaltsplan für das kommende Jahr präsentiert werden. Diese zeitliche Anpassung ermöglicht ausreichend Zeit für die Erstellung des Rechnungsabschlusses, einschließlich der notwendigen Zeit für die Kassenprüfer. Zudem erlaubt sie eine frühzeitige Beschlussfassung über den Haushaltsplan für das kommende Jahr noch im Vorjahr.
+
+  Die Änderung der Satzung zur Verlegung der Hauptversammlung auf einmal jährlich, vorzugsweise im Oktober, bringt nicht nur eine zeitliche Entlastung für den Kassier, sondern bietet auch den Vorteil, dass bei einer Änderung im Vorstand oder Ausschuss mehr Zeit für Übergabe und Einarbeitung zum Saisonende zur Verfügung steht, im Gegensatz zur bisherigen Regelung zum Saisonstart.
+  
+  \compare{§22 Absatz 1}{
+    Die ordentliche Hauptversammlung (Jahreshauptversammlung) findet \old{alljährlich im ersten Kalendervierteljahr} statt.
+    Der Vorstand hat die Einladung unter Angabe von Zeitpunkt,
+    Tagungsort und Tagesordnung allen Mitgliedern spätestens einen Monat zuvor durch einfachen Brief oder per E-Mail zuzustellen.
+  }{
+    Die ordentliche Hauptversammlung (Jahreshauptversammlung) findet \new{einmal jährlich} statt.
+    Der Vorstand hat die Einladung unter Angabe von Zeitpunkt,
+    Tagungsort und Tagesordnung allen Mitgliedern spätestens einen Monat zuvor durch einfachen Brief oder per E-Mail zuzustellen.
+    \new{Das Einladungsschreiben gilt als dem Mitglied zugegangen,wenn es an die letzte vom Mitglied dem Verein schriftlich bekannt gegebene Adresse gerichtet ist.}
+  }
+
+  \compare{§22 Absatz 3}{Anträge der Mitglieder können in der Haupt\-ver\-samm\-lung nur behandelt werden,
+  wenn sie spätestens \old{bis zum 31. Januar} schriftlich beim Vorsitzenden mit Begründung eingegangen sind.}
+  {Anträge der Mitglieder können in der Haupt\-ver\-samm\-lung nur behandelt werden,
+  wenn sie spätestens \new{6 Wochen vor der Hauptversammlung} beim Vorsitzenden mit Begründung eingegangen sind.
+  \new{Der Vorsizende hat diese Frist mit angemessener Frist den Mitgliedern mitzuteilen.}
+  }
+
+  \compare{§13 Absatz 2}
+  {Der Ausschuß und damit auch der Vorstand werden \old{auf zwei Jahre gewählt.}
+  Wiederwahl ist zulässig.}
+  {Der Ausschuss und damit auch der Vorstand werden \new{von der Mitgliederversammlung auf die Dauer von zwei Jahren, vom Tage der Wahl an gerechnet, gewählt.
+  Er bleibt jedoch bis zur Neuwahl des Ausschusses beziehungsweise des Vorstandes im Amt}.  Wiederwahl ist zulässig.}
+
+  \section{Aufnahme von Ordnungen in die Satzung}
+  Um die Vereinsangelegenheiten und internen Abläufe zu regeln, ist es sinnvoll, Ordnungen zu erlassen. Viele Vereine nutzen Ordnungen, um die Vereinsarbeit zu strukturieren und regeln. Der Vorteil von Ordnungen ist, dass sie im Gegensatz zur Satzung leichter zu ändern sind und somit flexibler auf aktuelle Gegebenheiten angepasst werden können. Bisher definieren wir Ordnungen in der Satzung nicht explizit, nutzen diese jedoch in abgeänderter Form, wie zum Beispiel für die Fluggebühren und Arbeitsstunden. Um diese Ordnungen in die Satzung aufzunehmen und die Möglichkeit zu schaffen, weitere Ordnungen zu erlassen, schlagen wir vor, einen Paragraphen in die Satzung aufzunehmen, der die Erlassung von Ordnungen regelt.
+
+  \change{
+    \subsubsection*{§ 27 Ordnungen}
+    Zur Durchführung der Satzung kann sich der Verein folgende Ordnungen geben:
+    \begin{enumerate}[label=\alph*),noitemsep]
+      \item Geschäftsordnung
+      \item Finanzordnung
+      \item Beitragsordnung
+      \item Datenschutzordnung
+      \item Jugendordnung
+      \item Ehrungsordnung
+    \end{enumerate}
+    sowie weitere, dem Verein dienliche Ordnungen.
+    
+    Die Mitgliederversammlung ist für den Erlass der Ordnungen zuständig.
+    Ausgenommen davon sind die Geschäftsordnung,
+    die vom Vorstand zu beschließen ist,
+    sowie die Jugendordnung,
+    die von der Vereinsjugend zu beschließen und vom Ausschuss zu bestätigen ist.
+    
+  }
+  \section{Hinzufügen von Strafbestimmungen}
+  \todo[inline]{Introtext}
+
+  Zur Aufnahme der Strafbestimmungen soll folgender Paragraph in die Satzung aufgenommen werden.
+
+  \change{
+    \subsubsection*{§ 28 Strafbestimmungen}
+    Sämtliche Mitglieder des Vereins unterliegen der Ordnungsgewalt des Vereins.
+    Der Vorstand kann gegen Mitglieder,
+    die gegen die Satzung oder gegen Beschlüsse der Organe verstoßen oder das Ansehen,
+    die Ehre und das Vermögen des Vereines schädigen,
+    folgende Maßnahmen verhängen:
+    \begin{enumerate}[label=\alph*),noitemsep]
+      \item Verweis
+      \item Zeitlich begrenztes Verbot der Teilnahme am Flugbetrieb und an Veranstaltungen des Vereines
+      \item Geldstrafe bis zu € 250,00 je Einzelfall
+      \item Ausschluss gemäß § 6 Punkt c)
+      \item Zeitlich begrenztes Verbot des Betretens der vereinseigenen Anlagen und Einrichtungen
+    \end{enumerate}
+  }
+
+  \section{Hinzufügen einer Datenschutzordnung}
+  Insbesondere seit Inkrafttreten der Datenschutzgrundverordnung (DSGVO) im Jahr 2018 ist der Datenschutz auch ein wichtiges Thema für Vereine. Unter anderem sind diese verpflichtet, die Einhaltung der DSGVO sicherzustellen und die Grundzüge der Datenerhebung und -verarbeitung schriftlich festzuhalten. Zu diesem Zwecke ist eine grundlegende Definition in der Satzung sinnvoll sowie die Erstellung einer Datenschutzordnung, die weitere Einzelheiten regelt. Die Verankerung des Datenschutzes in der Satzung ist ein wichtiger Schritt,  um die Einhaltung der DSGVO sicherzustellen und gibt über die weitergehende Datenschutzordnung zudem die Möglichkeit, die Datenschutzbestimmungen bei Bedarf (z.B. Adaption einer anderen Vereinsverwaltung oder geänderte Datenangaben) zu ändern.
+
+  Um diesen Ansprüchen gerecht zu werden soll ein Paragraph in die Satzung aufgenommen werden, der die grundlegenden Belange des Datenschutzes regelt und die Einhaltung der Datenschutzgrundverordnung sicherstellt.
+
+  \change{
+    \subsection*{§ 29 Datenschutz}
+
+    Unter Beachtung der gesetzlichen Vorgaben und Bestimmungen der EU\--Daten\-schutz\--Grund\-verordnung (DSGVO) und des Bundes\-datenschutz\-gesetzes (BDSG) werden zur Erfüllung der Zwecke und Aufgaben des Vereins personenbezogene Daten über persönliche und sachliche Verhältnisse der Mitglieder des Vereins erhoben und in den vereinseigenen EDV-Systemen gespeichert, genutzt und verarbeitet.
+
+    Als Mitglied des Württembergischen Landessportbundes e.V. (WLSB) ist der Verein verpflichtet, seine Mitglieder an den WLSB sowie an den jeweiligen Fachverband zu melden.
+    
+    Der Verein erlässt eine Datenschutzordnung, in der weitere Einzelheiten der Datenerhebung und der Datenverwendung sowie technische und organisatorische Maßnahmen zum Schutz der Daten aufgeführt sind. Die Datenschutzordnung wird auf Vorschlag der Vorstandschaft durch die Mitgliederversammlung beschlossen.
+    
+    Um die Aktualität der gemäß Absatz 1 erfassten Daten zu gewährleisten,
+    sind die Mitglieder verpflichtet, Veränderungen umgehend dem Verein mitzuteilen.
+  }
+
+  \section{Einführung eines Ehrenrates}
+  Der Ehrenrat soll als unabhängiges Gremium ins Leben gerufen, um die Integrität, Fairness und Ehre innerhalb des Vereins zu wahren. Seine Mitglieder werden aufgrund ihrer langjährigen Bindung und ihres Engagements für den Verein ausgewählt, wodurch sie ein tiefes Verständnis für die Werte und Traditionen des Vereins mitbringen.
+
+  Die Voraussetzungen für die Mitgliedschaft im Ehrenrat, wie das Erreichen des vierzigsten Lebensjahres und mindestens zehn Jahre ununterbrochene Mitgliedschaft, wurden bewusst festgelegt, um sicherzustellen, dass die gewählten Mitglieder über reichhaltige Erfahrungen und eine solide Verbundenheit mit dem Verein verfügen. Die Bedingung, nicht dem Vorstand anzugehören, gewährleistet zudem eine unvoreingenommene Betrachtung von Angelegenheiten, die den Verein betreffen.
+
+  Besonders bedeutend ist auch die Funktion des Ehrenrats bei der Durchführung von Schlichtungserfahren. Diese Rolle unterstützt die Aufrechterhaltung eines harmonischen Umfelds innerhalb des Vereins und gewährleistet, dass Konflikte fair und gerecht gelöst werden.
+  Hierzu soll folgender Paragraph in die Satzung aufgenommen werden.
+\change{
+  \subsubsection*{§ 30 Ehrenrat}
+  Der Ehrenrat besteht aus fünf Mitgliedern, die vom Ausschuss alle zwei Jahre gewählt werden.
+
+  Wählbar sind nur Mitglieder, die das vierzigste Lebensjahr vollendet haben, mindestens zehn Jahre dem Verein und nicht dem Vorstand angehören.
+
+  Der Ehrenrat wählt seinen Vorsitzenden selbst.
+
+  Die Aufgaben des Ehrenrates sind:
+
+  \begin{enumerate}[label=\alph*),noitemsep]
+    \item Unterbreitung von Ehrungsvorschlägen an den Vorstand gemäß den Bestimmungen der Ehrenordnung
+    \item Unterbreitung von Änderungsvorschlägen zur Ehrenordnung an den Ausschuss
+    \item Durchführung von Schlichtungs- und Ausschlussverfahren
+  \end{enumerate}
+
+  Der Ehrenrat tritt nur bei Bedarf zusammen.
+}
+
+Die Wahl des Ehrenrates soll auch in die Aufgaben des Ausschusses mit aufgenommen werden.
+
+\compare{§13 Absatz 3 Punkt g)}{
+  \em Bisher nicht vorhanden \em
+} {
+  g) Wahl des Ehrenrates
+}
+
+
+\section{Anhang}
+\begin{enumerate}
+  \item Darstellung der Unterschiede der Änderung in der Satzung
+  \item Satzung in der neuen Fassung
+\end{enumerate}
+
+\includepdf[pages=-]{../diff.pdf}
+\includepdf[pages=-]{../Satzung.pdf}
 
 \end{document}
 
